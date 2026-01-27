@@ -56,13 +56,9 @@ Synthesizing a final answer using only the retrieved context
 - **Orchestration:** LangChain  
 - **LLM:** Llama 3.2 (3B)  
 - **Embeddings:** Ollama Embeddings  
-- **Vector Database:** FAISS (Facebook AI Similarity Search)  
+- **Vector Database:** FAISS 
 - **Frontend:** Streamlit  
 
----
-
-## 📌 Note
-BLOCKBOT is designed to minimize hallucinations by ensuring all responses are grounded in retrieved documentation rather than general model knowledge.
 
 Demo screenshot link - https://drive.google.com/file/d/1ukNALKAR_2uXp4iiQEbZBkcz87a9eH_w/view?usp=drive_link
 
