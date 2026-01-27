@@ -2,7 +2,7 @@
 ### A Technical Blockchain Assistant  
 **Author:** Mihika Jain
 
-BLOCKBOT is a Retrieval-Augmented Generation (RAG) based technical assistant designed to answer blockchain-related queries strictly using trusted documentation and whitepapers.
+BLOCKBOT is a Retrieval-Augmented Generation (RAG) based technical assistant designed to answer blockchain-related queries strictly using trusted documentation.
 
 ---
 
@@ -29,12 +29,13 @@ BLOCKBOT is a Retrieval-Augmented Generation (RAG) based technical assistant des
 ---
 
 ## 🔄 How It Works (The RAG Pipeline)
+It is broadly divided into two steps - **Ingestion and Retrieval.**
 
 **1. Ingestion**  
-Extracting raw text from technical blockchain PDF whitepapers  
+Extracting raw text from technical blockchain PDFs
 
 **2. Chunking**  
-Splitting text into 500-character segments with overlap  
+Breaking large documents into smaller, meaningful pieces (chunks) of text before creating embeddings and storing them in a vector database. 
 
 **3. Embedding**  
 Converting text into high-dimensional numerical vectors  
@@ -57,7 +58,10 @@ Synthesizing a final answer using only the retrieved context
 - **LLM:** Llama 3.2 (3B)  
 - **Embeddings:** Ollama Embeddings  
 - **Vector Database:** FAISS 
-- **Frontend:** Streamlit  
+- **Frontend:** Streamlit
+- **Documents:** Google 
+
+It answers all the questions which are related to the documents provided , here those documents are blockchain documents.
 
 
 Demo screenshot link - https://drive.google.com/file/d/1ukNALKAR_2uXp4iiQEbZBkcz87a9eH_w/view?usp=drive_link
